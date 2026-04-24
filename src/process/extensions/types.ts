@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 AgentSpec (agentspec.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -64,10 +64,10 @@ export const ExtensionMetaSchema = z
       .record(z.string(), z.string().regex(/^\^?\d+\.\d+\.\d+(-[\w.]+)?$/, 'Dependency version must be semver format'))
       .optional()
       .describe('Extension dependencies: { extensionName: versionRange }'),
-    /** P2: AIONUI core version compatibility */
+    /** P2: AGENTSPEC core version compatibility */
     engine: z
       .object({
-        aionui: z
+        agentspec: z
           .string()
           .regex(/^\^?\d+\.\d+\.\d+(-[\w.]+)?$/, 'Engine version must be semver format')
           .optional()

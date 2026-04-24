@@ -30,9 +30,9 @@ describe('AuthService refreshToken', () => {
       },
       'db-secret',
       {
-        audience: 'aionui-webui',
+        audience: 'agentspec-webui',
         expiresIn: -10,
-        issuer: 'aionui',
+        issuer: 'agentspec',
       }
     );
 

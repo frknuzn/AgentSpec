@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 AgentSpec (agentspec.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -15,7 +15,7 @@ describe('extensions/pathSafety', () => {
   let root = '';
 
   beforeEach(async () => {
-    tempDir = await fs.mkdtemp(path.join(os.tmpdir(), 'aionui-path-safety-'));
+    tempDir = await fs.mkdtemp(path.join(os.tmpdir(), 'agentspec-path-safety-'));
     root = path.join(tempDir, 'safe-root');
     await fs.mkdir(root, { recursive: true });
   });

@@ -1,4 +1,4 @@
-# 🇷🇺 AionUi — Инструкция по русифицированной версии
+# 🇷🇺 AgentSpec — Инструкция по русифицированной версии
 
 ## Что русифицировано
 
@@ -18,7 +18,7 @@
 ### 1. Запуск в режиме разработки
 
 ```bash
-cd /Users/lma/Documents/Project/AionUi
+cd /Users/lma/Documents/Project/AgentSpec
 
 # Убедитесь что на правильной ветке
 git branch
@@ -50,7 +50,7 @@ bun run dist:linux
 Когда в основном репозитории появляются обновления:
 
 ```bash
-cd /Users/lma/Documents/Project/AionUi
+cd /Users/lma/Documents/Project/AgentSpec
 
 # 1. Переключитесь на main
 git checkout main
@@ -161,10 +161,10 @@ bun run test
 
 ### «Another instance is already running»
 
-Закройте все окна AionUi и запустите заново:
+Закройте все окна AgentSpec и запустите заново:
 
 ```bash
-pkill -f "AionUi" && bun run start
+pkill -f "AgentSpec" && bun run start
 ```
 
 ### База данных повреждена
@@ -173,7 +173,7 @@ pkill -f "AionUi" && bun run start
 Для полного сброса:
 
 ```bash
-rm -rf ~/Library/Application\ Support/AionUi-Dev/
+rm -rf ~/Library/Application\ Support/AgentSpec-Dev/
 bun run start
 ```
 
@@ -195,6 +195,6 @@ git rebase --continue
 
 ## Контакты
 
-- Официальный репозиторий: https://github.com/iOfficeAI/AionUi
+- Официальный репозиторий: https://github.com/iOfficeAI/AgentSpec
 - Discord: https://discord.gg/2QAwJn7Egx
-- Сайт: https://www.aionui.com
+- Сайт: https://www.agentspec.com

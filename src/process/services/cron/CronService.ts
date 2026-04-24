@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 AgentSpec (agentspec.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -342,7 +342,7 @@ export class CronService {
             ipcBridge.conversation.listChanged.emit({
               conversationId: conv.id,
               action: 'deleted',
-              source: conv.source || 'aionui',
+              source: conv.source || 'agentspec',
             });
           }
           if (childConversations.length > 0) {

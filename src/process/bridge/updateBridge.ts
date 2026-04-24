@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 AgentSpec (agentspec.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -54,8 +54,8 @@ interface AutoUpdateCheckParams {
   includePrerelease?: boolean;
 }
 
-const DEFAULT_REPO = 'iOfficeAI/AionUi';
-const DEFAULT_USER_AGENT = 'AionUi';
+const DEFAULT_REPO = 'iOfficeAI/AgentSpec';
+const DEFAULT_USER_AGENT = 'AgentSpec';
 const ALLOWED_ASSET_EXTS = new Set(['.exe', '.msi', '.dmg', '.zip', '.deb', '.rpm']);
 const ALLOWED_DOWNLOAD_HOSTS = new Set<string>([
   'github.com',
@@ -180,7 +180,7 @@ export const pickRecommendedAsset = (
 };
 
 const resolveRepo = (requestRepo?: string): string => {
-  const envRepo = process.env.AIONUI_GITHUB_REPO?.trim();
+  const envRepo = process.env.AGENTSPEC_GITHUB_REPO?.trim();
   const repo = (requestRepo || envRepo || DEFAULT_REPO).trim();
   return repo || DEFAULT_REPO;
 };
@@ -299,7 +299,7 @@ const sanitizeFileName = (name: string): string => {
   // Keep only base name and trim weird whitespace.
   const base = path.basename(name).trim();
   // Avoid empty names.
-  return base || `AionUi-update-${Date.now()}`;
+  return base || `AgentSpec-update-${Date.now()}`;
 };
 
 const ensureUniquePath = (target: string): string => {

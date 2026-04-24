@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 AgentSpec (agentspec.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -12,7 +12,7 @@ import path from 'path';
  * Current AionUI extension API version.
  * Increment major for breaking changes, minor for new features, patch for fixes.
  */
-export const AIONUI_VERSION = getAionUIVersion();
+export const AGENTSPEC_VERSION = getAionUIVersion();
 export const EXTENSION_API_VERSION = '1.0.0';
 
 type ParsedVersion = { major: number; minor: number; patch: number };
@@ -114,7 +114,7 @@ export interface EngineValidationResult {
  * Validate that an extension's engine requirements are satisfied by the current AionUI version.
  *
  * Checks:
- * 1. engine.aionui — does the running AionUI version satisfy the required range?
+ * 1. engine.agentspec — does the running AionUI version satisfy the required range?
  * 2. engine.extensionApi — (future) does the extension API version match?
  */
 export function validateEngineCompatibility(extension: LoadedExtension): EngineValidationResult {
@@ -128,11 +128,11 @@ export function validateEngineCompatibility(extension: LoadedExtension): EngineV
   const apiVersion = extension.manifest.apiVersion;
 
   // Check AionUI core version compatibility
-  if (engine?.aionui) {
-    if (!satisfiesVersion(AIONUI_VERSION, engine.aionui)) {
+  if (engine?.agentspec) {
+    if (!satisfiesVersion(AGENTSPEC_VERSION, engine.agentspec)) {
       result.valid = false;
       result.issues.push(
-        `Extension "${extension.manifest.name}" requires AionUI ${engine.aionui} but current version is ${AIONUI_VERSION}`
+        `Extension "${extension.manifest.name}" requires AionUI ${engine.agentspec} but current version is ${AGENTSPEC_VERSION}`
       );
     }
   }

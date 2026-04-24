@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 AgentSpec (agentspec.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -10,8 +10,8 @@ import path from 'path';
 
 const PRESETS_DIR = path.resolve(__dirname, '../../src/renderer/pages/settings/DisplaySettings/presets');
 
-const BACKGROUND_BLOCK_START = '/* AionUi Theme Background Start */';
-const BACKGROUND_BLOCK_END = '/* AionUi Theme Background End */';
+const BACKGROUND_BLOCK_START = '/* AgentSpec Theme Background Start */';
+const BACKGROUND_BLOCK_END = '/* AgentSpec Theme Background End */';
 
 // ── helpers ──
 

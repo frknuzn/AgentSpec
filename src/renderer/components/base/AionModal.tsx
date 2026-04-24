@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright 2025 AionUi (aionui.com)
+ * Copyright 2025 AgentSpec (agentspec.com)
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -378,13 +378,13 @@ const AionModal: React.FC<AionModalProps> = ({
       closable={false}
       footer={null}
       onCancel={onCancel}
-      className={`aionui-modal ${className}`}
+      className={`agentspec-modal ${className}`}
       style={finalStyle}
       getPopupContainer={() => document.body}
     >
-      <div className='aionui-modal-wrapper' style={{ borderRadius: borderRadiusVal }}>
+      <div className='agentspec-modal-wrapper' style={{ borderRadius: borderRadiusVal }}>
         {renderHeader()}
-        <div className='aionui-modal-body-content' style={bodyInlineStyle}>
+        <div className='agentspec-modal-body-content' style={bodyInlineStyle}>
           {children}
         </div>
         {renderFooter()}
